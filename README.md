@@ -1,1 +1,3 @@
 # about-me
+
+## this is a webpage about Corey DeJong's pursuit of awesomeness...
