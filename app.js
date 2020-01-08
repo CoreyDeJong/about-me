@@ -1,4 +1,7 @@
 'use strict';
+var name = prompt('Hello, What is your name?');
+console.log('The user put in ' + name);
+alert('Hello ' + name);
 
 var pets = prompt('Do you think I have any pets?');
 
@@ -115,6 +118,4 @@ else{
   alert('incorrect');
 }
 
-var name = prompt('Hello, What is your name?');
-console.log('The user put in ' + name);
-alert('Hello ' + name);
+alert('Thank you for answering all of my questions ' + name);
