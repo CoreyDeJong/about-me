@@ -1,50 +1,97 @@
-'use strict'
+'use strict';
 
-var pets = prompt('Do you have any pets?');
-// console.log('The user put in ' + pets);
-if(pets.toLowerCase() === "yes"){
-    alert('awesome')
+var pets = prompt('Do you think I have any pets?');
+
+if(pets.toLowerCase() === 'y'){
+//   console.log('correct');
+  alert('correct');
 }
-if(animal.toUpperCase() === "NO"){
-    alert('ok')
+else if(pets.toLowerCase() === 'yes'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(pets.toLowerCase() === 'n'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else if(pets.toLowerCase() === 'no'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else{
+  // console.log('incorrect');
+  alert('incorrect');
 }
 
-var allergic = prompt("Are you allergic to any animals?");
-// console.log(allergic);
+var college = prompt('Do you think I went to college?');
 
-var favorite = prompt('What is your favorite animal?');
-// console.log(favorite);
-    
-var turtles = prompt("Do you like turtles?");
-// console.log('Does the user like turles' + turtles);
-    
-alert('Hello ' + name + );
+if(college.toLowerCase() === 'y'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(college.toLowerCase() === 'yes'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(college.toLowerCase() === 'n'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else if(college.toLowerCase() === 'no'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else{
+  // console.log('incorrect');
+  alert('incorrect');
+}
+
+var state = prompt('Do you think I have been to every state?');
+
+if(state.toLowerCase() === 'y'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(state.toLowerCase() === 'yes'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(state.toLowerCase() === 'n'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else if(state.toLowerCase() === 'no'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else{
+  // console.log('incorrect');
+  alert('incorrect');
+}
+
+var outdoors = prompt('Do you think I like the outdoors?');
+
+if(outdoors.toLowerCase() === 'y'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(outdoors.toLowerCase() === 'yes'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(outdoors.toLowerCase() === 'n'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else if(outdoors.toLowerCase() === 'no'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else{
+  // console.log('incorrect');
+  alert('incorrect');
+}
 
 var name = prompt('Hello, What is your name?');
 console.log('The user put in ' + name);
-alert('Hello ' + name + );
-
-
-
-
-
-
-
-// var dog = 'porter';
-
-
-
-// if(dog === 'porter'){
-//     alert('Hello' + dog)
-// } 
-// else{
-//     alert('Hello puppy')
-// }
-
-// var answer = prompt('how old is your dog?')
-
-// if(answer === '9'){
-//     alert('you are correct')
-// }else{
-//     alert('you are wrong')
-// }
+alert('Hello ' + name);
