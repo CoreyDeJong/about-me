@@ -92,6 +92,29 @@ else{
   alert('incorrect');
 }
 
+var experience = prompt('Do you think I have previous programming experience?');
+
+if(experience.toLowerCase() === 'n'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(experience.toLowerCase() === 'no'){
+//   console.log('correct');
+  alert('correct');
+}
+else if(experience.toLowerCase() === 'y'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else if(experience.toLowerCase() === 'yes'){
+  // console.log('incorrect');
+  alert('incorrect');
+}
+else{
+  // console.log('incorrect');
+  alert('incorrect');
+}
+
 var name = prompt('Hello, What is your name?');
 console.log('The user put in ' + name);
 alert('Hello ' + name);
