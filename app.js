@@ -93,29 +93,51 @@
 //   alert('incorrect');
 // }
 
-//6th question guessing a number
+// //6th question guessing a number
 
-var correct = '5';
-var attempts = 0;
+var correct = 5;
+var numberGuess = 0;
 
 for (var i = 0; i < 4; i++){
-  var answer = prompt('How many guitars do you think I own?');
+  var answer = parseInt(prompt('How many guitars do you think I own?'));
   if(answer < correct){
     alert('Try again, too low');
-    attempts++;
+    numberGuess++;
   }else if(answer > correct){
     alert('try again, too high');
-    attempts++;
-  }else if(answer === '5'){
+    numberGuess++;
+  }else if(answer === correct){
     alert('Correct, I have 5 guitars');
     break;
-  }else if (attempts > 3){
-    alert('I have 5 guitars');
-    break;
   }
+
+  while(numberGuess === 4){
+    alert('I have 5 guitars')
+  }
+
 };
 
+// 7th Question
 
+//multiple correct answers stored in an array. Favorite foods
+// 6 attempts
+// display all correct answers
+// var userScore = 0;
+// var questions = ['What are my favorite types of beer?'];
+// var answers = ['Porter', 'Stouts', 'IPA'];
+// var response = '';
+
+// for (var i = 0; i < 6; i++) {
+//   response = prompt(questions[i]);
+//   if (response.toLowerCase() === answers[i].toLowerCase()) {
+//     alert('Correct!!');
+//     userScore++;
+//   } else {
+//     alert('Try Again');
+//   }
+// }
+
+// alert('You got' + userScore + ' correct, out of ' + questions.length);
 
 
 
