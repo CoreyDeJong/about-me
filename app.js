@@ -113,18 +113,18 @@ for (var i = 0; i < 4; i++){
   var answer = parseInt(prompt('How many guitars do you think I own?'));
   if(answer < correct){
     alert('Try again, too low');
-    numberGuess++;
   }else if(answer > correct){
     alert('try again, too high');
-    numberGuess++;
   }else if(answer === correct){
     alert('Correct, I have 5 guitars');
     userScore++;
     break;
   }
+  numberGuess++;
 
   while(numberGuess === 4){
-    alert('I have 5 guitars')
+    alert('I have 5 guitars');
+    break;
   }
 
 };
@@ -134,16 +134,18 @@ for (var i = 0; i < 4; i++){
 // 6 attempts, only need to get one of the answers correctly
 // display all correct answers
 // var userScore = 0;
-var questions = 'What are my favorite types of beer?';
+var question = 'What are my favorite types of beer?';
 var answers = ['porter', 'stout', 'ipa'];
 var response = '';
 var beerGuess = 0;
 
 for (var j = 0; j < 6; j++) {
-  response = prompt(questions);
-  if (response.includes(answers)) {
+  response = prompt(question);
+  response = Number(response);
+  if (response.toLowerCase() === (answers).toLowerCase()) {
     alert('Correct!!');
     userScore++;
+    break;
   } else {
     alert('No, I like my beer with more flavor!');
     beerGuess++;
@@ -151,10 +153,11 @@ for (var j = 0; j < 6; j++) {
 
   while(beerGuess === 6){
     alert('My favorite beers are ' + answers[0] + ', ' + answers[1] + ' and ' + answers [2]);
+    break;
   }
 }
 
-alert('You got' + userScore + ' correct, out of ' + questions.length);
+alert('You got ' + userScore + ' correct, out of ' + question.length);
 
 // response = prompt(questions);
 // if (response.toLowerCase() === answers.toLowerCase()){
