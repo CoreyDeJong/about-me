@@ -95,51 +95,57 @@
 
 // //6th question guessing a number
 
-var correct = 5;
-var numberGuess = 0;
+// var correct = 5;
+// var numberGuess = 0;
 
-for (var i = 0; i < 4; i++){
-  var answer = parseInt(prompt('How many guitars do you think I own?'));
-  if(answer < correct){
-    alert('Try again, too low');
-    numberGuess++;
-  }else if(answer > correct){
-    alert('try again, too high');
-    numberGuess++;
-  }else if(answer === correct){
-    alert('Correct, I have 5 guitars');
-    break;
-  }
+// for (var i = 0; i < 4; i++){
+//   var answer = parseInt(prompt('How many guitars do you think I own?'));
+//   if(answer < correct){
+//     alert('Try again, too low');
+//     numberGuess++;
+//   }else if(answer > correct){
+//     alert('try again, too high');
+//     numberGuess++;
+//   }else if(answer === correct){
+//     alert('Correct, I have 5 guitars');
+//     break;
+//   }
 
-  while(numberGuess === 4){
-    alert('I have 5 guitars')
-  }
+//   while(numberGuess === 4){
+//     alert('I have 5 guitars')
+//   }
 
-};
+// };
 
 // 7th Question
 
-//multiple correct answers stored in an array. Favorite foods
-// 6 attempts
+// 6 attempts, only need to get one of the answers correctly
 // display all correct answers
-// var userScore = 0;
-// var questions = ['What are my favorite types of beer?'];
-// var answers = ['Porter', 'Stouts', 'IPA'];
+var userScore = 0;
+var questions = 'What are my favorite types of beer?';
+var answers = ['porter', 'stout', 'ipa'];
 // var response = '';
+var beerGuess = 0;
 
-// for (var i = 0; i < 6; i++) {
-//   response = prompt(questions[i]);
-//   if (response.toLowerCase() === answers[i].toLowerCase()) {
-//     alert('Correct!!');
-//     userScore++;
-//   } else {
-//     alert('Try Again');
-//   }
-// }
+for (var i = 0; i < 6; i++) {
+  prompt(questions);
+  if (questions.includes(answers[i])) {
+    alert('Correct!!');
+    userScore++;
+  } else {
+    alert('No, I like my beer with more flavor!');
+    beerGuess++;
+  }
+
+  while(beerGuess === 6){
+    alert('My favorite beers are' + answers);
+  }
+}
 
 // alert('You got' + userScore + ' correct, out of ' + questions.length);
 
-
+// response = prompt(questions);
+// if (response.toLowerCase() === answers.toLowerCase()){
 
 
 // alert('Thank you for answering all of my questions ' + name);
