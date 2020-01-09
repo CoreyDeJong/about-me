@@ -1,29 +1,36 @@
 'use strict';
+
 var name = prompt('Hello, What is your name?');
-console.log('The user put in ' + name);
-alert('Hello ' + name);
+
+function yourName(){
+  alert('hello ' +name+ '.');
+}
 
 var userScore = 0;
-var pets = prompt('Do you think I have any pets?');
 
-if(pets.toLowerCase() === 'y'){
-  alert('correct');
-  userScore++;
-}
-else if(pets.toLowerCase() === 'yes'){
-  alert('correct');
-  userScore++;
-}
-else if(pets.toLowerCase() === 'n'){
-  alert('incorrect');
-}
-else if(pets.toLowerCase() === 'no'){
-  alert('incorrect');
-}
-else{
-  alert('incorrect');
+function question1(){
+  var pets = prompt('Do you think I have any pets?');
+
+  if(pets.toLowerCase() === 'y'){
+    alert('correct');
+    userScore++;
+  }
+  else if(pets.toLowerCase() === 'yes'){
+    alert('correct');
+    userScore++;
+  }
+  else if(pets.toLowerCase() === 'n'){
+    alert('incorrect');
+  }
+  else if(pets.toLowerCase() === 'no'){
+    alert('incorrect');
+  }
+  else{
+    alert('incorrect');
+  }
 }
 
+function question2(){
 var college = prompt('Do you think I went to college?');
 
 if(college.toLowerCase() === 'y'){
@@ -43,7 +50,9 @@ else if(college.toLowerCase() === 'no'){
 else{
   alert('incorrect');
 }
+}
 
+function question3(){
 var state = prompt('Do you think I have been to every state?');
 
 if(state.toLowerCase() === 'y'){
@@ -63,7 +72,9 @@ else if(state.toLowerCase() === 'no'){
 else{
   alert('incorrect');
 }
+}
 
+function question4(){
 var outdoors = prompt('Do you think I like the outdoors?');
 
 if(outdoors.toLowerCase() === 'y'){
@@ -83,7 +94,9 @@ else if(outdoors.toLowerCase() === 'no'){
 else{
   alert('incorrect');
 }
+}
 
+function question5(){
 var experience = prompt('Do you think I have previous programming experience?');
 
 if(experience.toLowerCase() === 'n'){
@@ -103,9 +116,11 @@ else if(experience.toLowerCase() === 'yes'){
 else{
   alert('incorrect');
 }
-
+}
 // //6th question guessing a number
 
+
+function question6(){
 var correct = 5;
 var numberGuess = 0;
 
@@ -126,41 +141,44 @@ for (var i = 0; i < 4; i++){
     alert('I have 5 guitars');
     break;
   }
-
-};
+}
+}
 
 // 7th Question
 
 // 6 attempts, only need to get one of the answers correctly
 // display all correct answers
 // var userScore = 0;
-var question = 'What are my favorite types of beer?';
+
+function question7(){
+
 var answers = ['porter', 'stout', 'ipa'];
-var response = '';
-var beerGuess = 0;
 
 for (var j = 0; j < 6; j++) {
-  response = prompt(question);
-  response = Number(response);
-  if (response.toLowerCase() === (answers).toLowerCase()) {
+  var question = prompt('What are my favorite types of beer?');
+  if (answers.includes(question)){
     alert('Correct!!');
     userScore++;
-    break;
+    j=6;
   } else {
     alert('No, I like my beer with more flavor!');
-    beerGuess++;
   }
 
-  while(beerGuess === 6){
+  if(j === 6){
     alert('My favorite beers are ' + answers[0] + ', ' + answers[1] + ' and ' + answers [2]);
-    break;
   }
 }
+}
 
-alert('You got ' + userScore + ' correct, out of ' + question.length);
+yourName();
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();
 
-// response = prompt(questions);
-// if (response.toLowerCase() === answers.toLowerCase()){
-
+alert('You got ' + userScore + ' correct, out of 7.');
 
 alert('Thank you for answering all of my questions ' + name);
