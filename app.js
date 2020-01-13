@@ -1,9 +1,9 @@
 'use strict';
 
-var name = prompt('Hello, What is your name?');
+var hello = prompt('Hello, What is your name?');
 
 function yourName(){
-  alert('hello ' + name + '.');
+  alert('hello ' + hello + '.');
 }
 
 var userScore = 0;
@@ -159,7 +159,6 @@ function question6(){
 //       alert('My favorite beers are ' + answers[0] + ', ' + answers[1] + ' and ' + answers [2]);
 //     }
 //   }
-// // 
 
 function question7(){
 
@@ -192,4 +191,4 @@ question7();
 
 alert('You got ' + userScore + ' correct, out of 7.');
 
-alert('Thank you for answering all of my questions ' + name);
+alert('Thank you for answering all of my questions ' + hello);
