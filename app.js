@@ -3,7 +3,7 @@
 var name = prompt('Hello, What is your name?');
 
 function yourName(){
-  alert('hello ' +name+ '.');
+  alert('hello ' + name + '.');
 }
 
 var userScore = 0;
@@ -117,8 +117,6 @@ function question5(){
     alert('incorrect');
   }
 }
-// //6th question guessing a number
-
 
 function question6(){
   var correct = 5;
@@ -141,11 +139,27 @@ function question6(){
   }
 }
 
-// 7th Question
+// Original Code:
 
-// 6 attempts, only need to get one of the answers correctly
-// display all correct answers
-// var userScore = 0;
+// function question7(){
+
+//   var answers = ['porter', 'stout', 'ipa'];
+
+//   for (var j = 0; j < 6; j++) {
+//     var question = prompt('What are my favorite types of beer?');
+//     if (answers.includes(question)){
+//       alert('Correct!!');
+//       userScore++;
+//       j = 6;
+//     } else {
+//       alert('No, I like my beer with more flavor!');
+//     }
+
+//     if(j === 6){
+//       alert('My favorite beers are ' + answers[0] + ', ' + answers[1] + ' and ' + answers [2]);
+//     }
+//   }
+// // 
 
 function question7(){
 
